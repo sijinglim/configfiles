@@ -6,6 +6,8 @@
 :set guioptions-=r  "remove right-hand scroll bar
 :set guioptions-=L  "remove left-hand scroll bar
 :syntax on
+:se foldmethod=syntax
+:se fileformat=unix
 :colorscheme default
 :set background=dark
 highlight Normal guibg=black guifg=white
@@ -14,6 +16,7 @@ highlight Normal guibg=black guifg=white
 :set cursorline
 :set ruler
 :set nu
+:set laststatus=2
 :set expandtab
 :set tabstop=4
 :set shiftwidth=4
@@ -28,3 +31,5 @@ highlight Normal guibg=black guifg=white
 :set incsearch
 :nnoremap <F5> "=strftime("%c")<CR>P
 :inoremap <F5> <C-R>=strftime("%c")<CR>
+:nnoremap <F4> "=strftime("%X")<CR>P
+:inoremap <F4> <C-R>=strftime("%X")<CR>
