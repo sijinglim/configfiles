@@ -33,3 +33,6 @@ highlight Normal guibg=black guifg=white
 :inoremap <F5> <C-R>=strftime("%c")<CR>
 :nnoremap <F4> "=strftime("%X")<CR>P
 :inoremap <F4> <C-R>=strftime("%X")<CR>
+
+:au FileType c nn <buffer>  :g/.*\s.*(.*)\n{<CR>
+:au FileType python nn <buffer>  :g/.*def\s<CR>
